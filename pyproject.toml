@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "wirepayment"
+version = "0.1.0"
+description = "Official Python SDK for the Wire payment API"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [{ name = "Buildry" }]
+dependencies = []
+
+[project.urls]
+Homepage = "https://wire.mn"
+Source = "https://github.com/buildry-wire/wire-python"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/wire"]
