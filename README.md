@@ -13,7 +13,7 @@ import wire
 
 client = wire.Client("sk_live_...")
 
-pi = client.payment_intents.create(amount=50000, currency="MNT")  # minor units
+pi = client.payment_intents.create(amount=50000, currency="MNT")  # whole tögrög: 50,000 ₮
 print(pi.id, pi.status)
 ```
 
